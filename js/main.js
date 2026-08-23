@@ -2,11 +2,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
-
+    
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
-            navToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+            navToggle.classList.toggle('active');
         });
 
         // Close menu when clicking on a link
@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
                 navMenu.classList.remove('active');
-                navToggle.textContent = '☰';
+                navToggle.classList.remove('active');
             });
         });
     }
 
-    // Smooth scroll for anchor links (fallback for older browsers)
+    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                const headerOffset = 70;
+                const headerOffset = 80;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -48,15 +48,17 @@ document.addEventListener('DOMContentLoaded', function() {
         
         sections.forEach(section => {
             const sectionHeight = section.offsetHeight;
-            const sectionTop = section.offsetTop - 100;
+            const sectionTop = section.offsetTop - 150;
             const sectionId = section.getAttribute('id');
             const navLink = document.querySelector(`.nav-menu a[href="#${sectionId}"]`);
             
             if (navLink) {
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    navLink.style.opacity = '1';
+                    navLink.style.background = 'rgba(59, 130, 246, 0.2)';
+                    navLink.style.color = 'white';
                 } else {
-                    navLink.style.opacity = '';
+                    navLink.style.background = '';
+                    navLink.style.color = '';
                 }
             }
         });
@@ -64,15 +66,42 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', highlightNavigation);
 
-    // Header shadow on scroll
+    // Header background on scroll
     const header = document.querySelector('.header');
     if (header) {
         window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
-                header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.15)';
+                header.style.background = 'rgba(15, 23, 42, 0.98)';
             } else {
-                header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+                header.style.background = 'rgba(15, 23, 42, 0.95)';
             }
         });
     }
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.stat-card, .service-card, .value-item, .portfolio-stat, .tool-category, .timeline-item, .coop-item, .contact-card');
+    
+    function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+        const revealPoint = windowHeight * 0.85;
+        
+        revealElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            
+            if (elementTop < revealPoint) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }
+        });
+    }
+
+    // Initialize reveal elements
+    revealElements.forEach(element => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(30px)';
+        element.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+    });
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
 });
