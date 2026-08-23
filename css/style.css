@@ -433,6 +433,95 @@ img {
     background: var(--bg-light);
 }
 
+/* Section Alt - Dark variant for workflow */
+.section-alt {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+    color: white;
+}
+
+.section-alt .section-tag {
+    background: var(--gradient-accent);
+}
+
+.section-alt h2 {
+    color: white;
+}
+
+.section-alt .section-subtitle {
+    color: var(--text-muted);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    margin-top: -40px;
+    margin-bottom: 60px;
+}
+
+/* Workflow Grid */
+.workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.workflow-step {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px 25px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+.workflow-step:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gradient-accent);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.step-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.workflow-step h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.workflow-step p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+
 /* About Section */
 .about-content {
     display: grid;
@@ -1338,6 +1427,10 @@ img {
 
     .portfolio-stats {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .workflow-grid {
+        grid-template-columns: 1fr;
     }
 
     .ps-number {
