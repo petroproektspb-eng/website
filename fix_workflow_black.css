@@ -1,0 +1,5 @@
+#workflow .section-header h2,
+#workflow .section-subtitle,
+#workflow .workflow-step h3 {
+    color: #000000 !important;
+}

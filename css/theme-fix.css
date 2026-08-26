@@ -1,0 +1,228 @@
+body {
+    background: var(--bg-page) !important;
+    color: var(--text-primary) !important;
+}
+
+.section h2,
+.geography-copy .lead,
+.geography-copy > p:not(.lead),
+.workflow-step h3 {
+    color: var(--text-primary) !important;
+}
+
+.geography-copy > p:not(.lead) {
+    opacity: 0.84;
+}
+
+.section,
+.section:nth-child(even),
+.section:nth-child(odd):not(:first-child),
+.section-alt,
+.geography {
+    background: rgba(10, 18, 27, 0.92) !important;
+}
+
+.header,
+.footer {
+    background: rgba(9, 19, 31, 0.96) !important;
+}
+
+.stat-card,
+.service-card,
+.services-additional,
+.value-item,
+.portfolio-stat,
+.portfolio-industries,
+.portfolio-clients,
+.tool-category,
+.timeline-item,
+.education-card,
+.qualification-card,
+.coop-item,
+.contact-card {
+    background: rgba(18, 31, 49, 0.82) !important;
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+.stat-card h3,
+.service-card h3,
+.value-item h3,
+.portfolio-industries h3,
+.portfolio-clients h3,
+.tool-category h3,
+.timeline-content h3,
+.coop-item h3,
+.contact-card strong,
+.edu-header h3 {
+    color: var(--text-primary) !important;
+}
+
+.stat-label,
+.stat-detail,
+.service-card p,
+.services-additional p,
+.value-item p,
+.portfolio-intro,
+.ps-label,
+.portfolio-industries p,
+.portfolio-clients p,
+.tool-category p,
+.timeline-content p,
+.coop-item p,
+.contact-card p,
+.edu-full-name,
+.edu-details p,
+.qual-title,
+.qual-number {
+    color: var(--text-muted) !important;
+}
+
+.map-stage {
+    min-height: 380px;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 16px !important;
+    background: rgba(18, 31, 49, 0.82) !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+.map-markers {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.russia-map .country-shape {
+    fill: rgba(76, 134, 166, 0.14);
+    stroke: var(--steel-soft);
+    stroke-width: 1.6;
+    stroke-linejoin: round;
+}
+
+.russia-map .country-kazakhstan {
+    fill: rgba(232, 116, 44, 0.05);
+    stroke: var(--copper-soft);
+    stroke-width: 1.35;
+    stroke-dasharray: 4 4;
+}
+
+.country-label {
+    fill: rgba(234, 242, 255, 0.44);
+    font: 600 13.5px 'IBM Plex Mono', monospace;
+    letter-spacing: 0.16em;
+    pointer-events: none;
+    filter: blur(0.35px);
+    text-anchor: middle;
+}
+
+.country-label-kazakhstan {
+    fill: rgba(242, 166, 109, 0.8);
+}
+
+.map-location-layer {
+    pointer-events: auto;
+}
+
+.map-location-group {
+    outline: none;
+    cursor: help;
+}
+
+.map-location {
+    fill: var(--copper);
+    stroke: rgba(232, 116, 44, 0.25);
+    stroke-width: 5;
+    paint-order: stroke;
+    filter: drop-shadow(0 0 6px rgba(232, 116, 44, 0.8));
+    animation: map-location-pulse 2.2s ease-out infinite;
+    cursor: help;
+}
+
+.map-location-cold {
+    fill: var(--steel-soft);
+    stroke: rgba(121, 175, 196, 0.28);
+    filter: drop-shadow(0 0 6px rgba(121, 175, 196, 0.85));
+}
+
+.location-label {
+    fill: #ffffff;
+    font: 600 12px 'IBM Plex Sans', sans-serif;
+    paint-order: stroke;
+    stroke: rgba(9, 19, 31, 0.9);
+    stroke-width: 2px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.18s ease;
+}
+
+.map-location-group:hover .location-label,
+.map-location-group:focus .location-label {
+    opacity: 1;
+}
+
+@keyframes map-location-pulse {
+    0%, 45% { opacity: 1; }
+    75%, 100% { opacity: 0.55; }
+}
+
+.map-marker {
+    position: absolute !important;
+    width: 18px;
+    height: 18px;
+    transform: translate(-50%, -50%);
+    cursor: help;
+    z-index: 3;
+}
+
+.geo-tooltip {
+    min-width: 180px;
+    border-radius: 8px;
+    font-size: 1.17rem;
+}
+
+.geo-tooltip small {
+    font-size: 0.8rem;
+}
+
+#workflow .section-header h2,
+#workflow .section-subtitle {
+    color: var(--text-primary) !important;
+}
+
+.contacts-buttons .btn-outline,
+.contacts-buttons .btn-outline span,
+.contacts-buttons .btn-outline svg {
+    color: var(--text-primary) !important;
+}
+
+.contacts-buttons .btn-outline {
+    background: rgba(76, 134, 166, 0.14) !important;
+    border-color: rgba(121, 175, 196, 0.48) !important;
+}
+
+.contacts-buttons .btn-outline:hover {
+    background: rgba(76, 134, 166, 0.24) !important;
+    border-color: var(--steel-soft) !important;
+}
+
+.photo-placeholder {
+    padding: 0;
+}
+
+.photo-placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 980px) {
+    .geography-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .scroll-sigil {
+        display: none;
+    }
+}
