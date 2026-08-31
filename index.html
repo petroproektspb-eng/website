@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт-резюме инженера-проектировщика систем электрообогрева Трофимова Евгения Сергеевича. 19 лет опыта, 65+ проектов.">
+    <title>Трофимов Евгений Сергеевич — Инженер-проектировщик систем электрообогрева</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme-fix.css?v=20260824-object-label-size">
+</head>
+<body>
+    <nav class="node-map" aria-label="Навигация по разделам страницы">
+        <div class="node-map-line"></div>
+        <div class="node-map-line-fill" id="nodeMapFill"></div>
+        <a href="#about" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">01 · Обо мне</span></a>
+        <a href="#geography" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">02 · География</span></a>
+        <a href="#stats" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">03 · Показатели</span></a>
+        <a href="#services" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">04 · Услуги</span></a>
+        <a href="#value" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">05 · Ценность</span></a>
+        <a href="#workflow" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">06 · Схема работы</span></a>
+        <a href="#portfolio" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">07 · Портфолио</span></a>
+        <a href="#tools" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">08 · Стек</span></a>
+        <a href="#experience" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">09 · Опыт</span></a>
+        <a href="#education" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">10 · Образование</span></a>
+        <a href="#cooperation" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">11 · Формат работы</span></a>
+        <a href="#contacts" class="node-map-item"><span class="node-map-dot"></span><span class="node-map-label">12 · Контакты</span></a>
+    </nav>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#hero" class="logo">
+                    <span class="logo-icon"><svg class="icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg></span>
+                    <span class="logo-text">Трофимов Е.С.</span>
+                </a>
+                <button class="nav-toggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#geography">География</a></li>
+                    <li><a href="#stats">Показатели</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#experience">Опыт</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-pattern">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+    
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+        <div class="hero-cables">
+            <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+                <path class="cable-line" d="M 0 150 Q 360 100, 720 150 T 1440 150" />
+                <path class="cable-line" d="M 0 170 Q 360 120, 720 170 T 1440 170" />
+                <path class="cable-line" d="M 0 190 Q 360 140, 720 190 T 1440 190" />
+            </svg>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Инженер-проектировщик с 2006 года</div>
+                <h1>Трофимов Евгений Сергеевич</h1>
+                <p class="hero-position">Проектирование систем электрообогрева промышленных объектов</p>
+                <p class="hero-subtitle">ИП · Полный цикл: от расчётов до ПНР · Без субподряда</p>
+                <div class="hero-meta">
+                    <span class="meta-item"><svg class="icon-svg meta-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg> Санкт-Петербург</span>
+                    <span class="meta-divider">•</span>
+                    <span class="meta-item"><svg class="icon-svg meta-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 4 5.7 4 9s-1.4 6.4-4 9c-2.6-2.6-4-5.7-4-9s1.4-6.4 4-9Z"/></svg> Удалённо / Гибрид / На месте</span>
+                    <span class="meta-divider">•</span>
+                    <span class="meta-item"><svg class="icon-svg meta-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.8V11l8-2.5V4a1.3 1.3 0 0 1 2.6 0v4.5L21 11v1.8l-7.4-1.9v4.4l2.4 1.6v1.4l-3.5-1-3.5 1v-1.4l2.4-1.6v-4.4L3 12.8Z"/></svg> Командировки — готов</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contacts" class="btn btn-primary">
+                        <span>Связаться со мной</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </a>
+                    <a href="./Резюме.pdf" class="btn btn-secondary" download>
+                        <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        <span>Скачать резюме (PDF)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,100 720,20 1080,60 C1260,80 1380,90 1440,95 L1440,120 L0,120 Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 01</span>
+                <h2>19 лет в промышленном проектировании</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-photo">
+                    <div class="photo-placeholder">
+                        <img src="Trofimov.jpg" alt="Трофимов Евгений Сергеевич">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="lead">С 2014 года работаю как ИП: все проекты — от расчётов до пусконаладки — выполняю лично, без передачи на субподряд.</p>
+                    <p>За 11 лет в этом формате — более <strong>65 реализованных объектов</strong> в 6+ отраслях:</p>
+                    <ul class="about-list">
+                        <li><svg class="icon-svg list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 3 5 6.4 5 10a5 5 0 0 1-10 0c0-3.6 2-7 5-10Z"/><path d="M12 12.5v5"/></svg> Нефтегаз (добыча/переработка)</li>
+                        <li><svg class="icon-svg list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l5 3V10l5 3V10l5 3v8H3Z"/><path d="M8 21v-4h3v4M14 21v-3h3v3"/></svg> Целлюлозно-бумажная промышленность</li>
+                        <li><svg class="icon-svg list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v9"/><circle cx="12" cy="5" r="2"/><path d="M6 12a6 6 0 0 0 12 0"/><path d="M4 12h2M18 12h2M12 12v7"/><path d="m9 21 3-2 3 2"/></svg> Порты и морские суда</li>
+                        <li><svg class="icon-svg list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V11l6-3.5V21M10 9.5 20 5v16"/><path d="M4 21h16M13 12h4M13 16h4"/></svg> Гражданское строительство</li>
+                        <li><svg class="icon-svg list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c-3 0-9 1.5-11 6l7 7c4.5-2 6-8 6-11 0-1-1-2-2-2Z"/><path d="M9.5 14.5 4 20M6.5 12 4 9.5"/></svg> Горно-перерабатывающие предприятия</li>
+                        <li><svg class="icon-svg list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c3.5 0 6-2.4 6-5.8 0-2.6-1.6-4-2.6-5.7-.4 1.3-1.2 2-1.9 1.4.6-2.7-.4-5.4-2.6-6.9.4 2-.1 3.4-1.3 4.6C8 11.2 6.5 12.8 6.5 15.5 6.5 19.2 8.8 22 12 22Z"/></svg> Металлургия</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geography Section -->
+    <section id="geography" class="section geography">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 02</span>
+                <h2>География реализованных объектов</h2>
+            </div>
+            <div class="geography-layout">
+                <div class="geography-copy">
+                    <span class="geo-kicker">ТЕРРИТОРИЯ РАБОТЫ / РФ</span>
+                    <p class="lead">От портовой инфраструктуры Северо-Запада до сложных климатических зон Сибири и Дальнего Востока.</p>
+                    <p>Проектирую системы электрообогрева для объектов, где важны устойчивость, расчёт и готовность работать на месте.</p>
+                    <div class="geo-legend">
+                        <span><i class="legend-dot legend-dot-warm"></i> промышленный объект</span>
+                        <span><i class="legend-dot legend-dot-cool"></i> холодная климатическая зона</span>
+                    </div>
+                </div>
+                <div class="map-stage" aria-label="Стилизованная карта России с объектами">
+                    <svg class="russia-map" viewBox="0 0 800 380" role="img" aria-label="Карта России с объектами"></svg>
+                    <div class="map-markers" aria-label="Объекты на карте"></div>
+                    <div class="map-coordinates mono">55°45'N / 37°37'E</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Stats Section -->
+    <section id="stats" class="section stats">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 03</span>
+                <h2>Ключевые показатели</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card stat-card-lg">
+                    <span class="stat-number">19+</span>
+                    <span class="stat-label">лет в проектировании</span>
+                    <span class="stat-detail">с 2006 года</span>
+                </div>
+                <div class="stat-card stat-card-lg">
+                    <span class="stat-number">12+</span>
+                    <span class="stat-label">лет удалённой работы</span>
+                    <span class="stat-detail">проверенный формат</span>
+                </div>
+                <div class="stat-card stat-card-lg">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label">отраслей промышленности</span>
+                    <span class="stat-detail">широкий опыт</span>
+                </div>
+                <div class="stat-card stat-card-lg">
+                    <span class="stat-number">65+</span>
+                    <span class="stat-label">реализованных проектов</span>
+                    <span class="stat-detail">2014–2025, как ИП</span>
+                </div>
+                <div class="stat-card stat-card-lg">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">языка документации</span>
+                    <span class="stat-detail">русский / английский</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 04</span>
+                <h2>Специализация и услуги</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 14 4l6 16H4Z"/><path d="M8.5 13h5"/></svg></div>
+                    <h3>Расчёты и ТКП</h3>
+                    <p>Тепловые и электрические расчёты бункеров, трубопроводов, резервуаров, кровли, полов, оборудования; базовые расчёты для КП.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg></div>
+                    <h3>Проектирование «под ключ»</h3>
+                    <p>Саморегулирующийся, резистивный, высокотемпературный кабель с минеральной изоляцией; нагревательные модули и панели; зоны Ex/ATEX; согласование с Ростехнадзором.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2-2 2.6-2.6Z"/></svg></div>
+                    <h3>Шкафы управления</h3>
+                    <p>Полное проектирование силовой части и схем управления: однолинейные схемы, спецификации, подбор автоматики.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><path d="M8.5 11h7M8.5 15h7M8.5 19h4"/></svg></div>
+                    <h3>Сопровождение</h3>
+                    <p>Экспертиза проектной документации, работа с замечаниями, корректировка РД, авторский надзор, поддержка монтажа и ПНР.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h7l5 5v13a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20V3.5A1.5 1.5 0 0 1 6.5 2Z"/><path d="M14 2v5h5"/><path d="M9 13h6M9 16.5h6"/></svg></div>
+                    <h3>Техническая документация</h3>
+                    <p>Разработка ТЗ и технических требований для проектных институтов и генподрядчиков.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 4 5.7 4 9s-1.4 6.4-4 9c-2.6-2.6-4-5.7-4-9s1.4-6.4 4-9Z"/></svg></div>
+                    <h3>Международный опыт</h3>
+                    <p>Совместное русско-английское проектирование, двуязычная документация.</p>
+                </div>
+            </div>
+            <div class="services-additional">
+                <p><strong>Дополнительно:</strong> выбор теплоизоляции, тепловые и электрические расчёты, экспертиза/авторский надзор, работа во взрывоопасных зонах (Ex/ATEX).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="value" class="section value">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 05</span>
+                <h2>Ценность для заказчика</h2>
+            </div>
+            <div class="value-grid">
+                <div class="value-item">
+                    <div class="value-icon"><svg class="icon-svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v10M9.5 9.3c0-1.3 1.1-2.1 2.5-2.1s2.5.8 2.5 1.9c0 2.6-5 1.2-5 3.8 0 1.1 1.1 1.9 2.5 1.9s2.5-.8 2.5-2.1"/></svg></div>
+                    <h3>Экономия бюджета</h3>
+                    <p>Снижение избыточной мощности и стоимости системы за счёт точных расчётов</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><svg class="icon-svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+                    <h3>Практичность</h3>
+                    <p>Проектирование с учётом реального монтажа и эксплуатации</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><svg class="icon-svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 2 4.5 5.4 4.5 9.5 0 2-1 3.7-1 3.7l-3.5-1-3.5 1s-1-1.7-1-3.7C7.5 8.4 9 5 12 3Z"/><path d="M9.5 16.5 8 21l2.7-1.6M14.5 16.5 16 21l-2.7-1.6"/><circle cx="12" cy="10.5" r="1.4"/></svg></div>
+                    <h3>Быстрый старт</h3>
+                    <p>Быстрое включение в проект без длительной адаптации</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><svg class="icon-svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6.5v5.2c0 4.8 3.4 8 8 9.3 4.6-1.3 8-4.5 8-9.3V6.5L12 3Z"/><path d="m8.5 12.3 2.4 2.4 4.6-5"/></svg></div>
+                    <h3>Чистая экспертиза</h3>
+                    <p>Минимизация замечаний экспертизы</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><svg class="icon-svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.2"/><path d="M12 3v2.8M12 18.2V21M3 12h2.8M18.2 12H21"/></svg></div>
+                    <h3>Полная поддержка</h3>
+                    <p>Поддержка на всех этапах: от ТКП до ПНР</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 06</span>
+                <h2>Схема работы</h2>
+            </div>
+            <p class="section-subtitle">Прозрачный процесс от заявки до запуска системы</p>
+            
+            <div class="workflow-grid">
+                <div class="workflow-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><path d="M8.5 11h7M8.5 15h4"/></svg></div>
+                    <h3>ТЗ и исходные данные</h3>
+                    <p>Анализ опросных листов, чертежей трубопроводов/резервуаров и технических требований.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8 7h8"/><circle cx="8.3" cy="11.3" r="0.9"/><circle cx="12" cy="11.3" r="0.9"/><circle cx="15.7" cy="11.3" r="0.9"/><circle cx="8.3" cy="15" r="0.9"/><circle cx="12" cy="15" r="0.9"/><circle cx="15.7" cy="15" r="0.9"/><circle cx="8.3" cy="18.7" r="0.9"/><circle cx="12" cy="18.7" r="0.9"/><circle cx="15.7" cy="18.7" r="0.9"/></svg></div>
+                    <h3>Расчёты и подбор</h3>
+                    <p>Выполнение тепловых и электрических расчётов, подбор кабеля, автоматики и комплектации.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2.2"/><circle cx="12" cy="13" r="8"/><path d="M12 13 15.5 8"/><circle cx="12" cy="13" r="1.1"/></svg></div>
+                    <h3>Проектирование</h3>
+                    <p>Разработка рабочей документации (схемы, планы, спецификации) и шкафов управления.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg></div>
+                    <h3>Согласование</h3>
+                    <p>Сопровождение экспертизы, оперативное внесение правок, защита проектных решений.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">05</div>
+                    <div class="step-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 8.5 15 12l-5.5 3.5v-7Z"/></svg></div>
+                    <h3>Запуск и ПНР</h3>
+                    <p>Консультирование монтажной бригады, помощь с пусконаладкой и сдачей объекта.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 07</span>
+                <h2>Портфолио в цифрах</h2>
+            </div>
+            <p class="portfolio-intro">За 11 лет в формате ИП (2014–2025) лично выполнено <strong>65 проектов</strong> полного цикла — от расчётов до ПНР:</p>
+            
+            <div class="portfolio-stats">
+                <div class="portfolio-stat">
+                    <span class="ps-number">≈ 235 км</span>
+                    <span class="ps-label">Греющий кабель<br>(235 617 м)</span>
+                </div>
+                <div class="portfolio-stat">
+                    <span class="ps-number">≈ 123 км</span>
+                    <span class="ps-label">Силовой кабель<br>(123 080 м)</span>
+                </div>
+                <div class="portfolio-stat">
+                    <span class="ps-number">≈ 33 км</span>
+                    <span class="ps-label">Контрольный кабель<br>(32 829 м)</span>
+                </div>
+                <div class="portfolio-stat">
+                    <span class="ps-number">1 640 шт</span>
+                    <span class="ps-label">Панели обогрева</span>
+                </div>
+                <div class="portfolio-stat">
+                    <span class="ps-number">4 963 шт</span>
+                    <span class="ps-label">Соединительные коробки</span>
+                </div>
+                <div class="portfolio-stat">
+                    <span class="ps-number">≈ 9 км</span>
+                    <span class="ps-label">Кабельные лотки/<br>конструкции (9 007 м)</span>
+                </div>
+                <div class="portfolio-stat">
+                    <span class="ps-number">&gt; 120</span>
+                    <span class="ps-label">Шкафов управления</span>
+                </div>
+            </div>
+
+            <div class="portfolio-sections">
+                <div class="portfolio-industries">
+                    <h3><svg class="icon-svg heading-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l5 3V10l5 3V10l5 3v8H3Z"/><path d="M8 21v-4h3v4M14 21v-3h3v3"/></svg> Отрасли объектов</h3>
+                    <p>Нефтегаз, горнорудная и горно-металлургическая промышленность, ЦБП/лесная промышленность, металлургия, пищевая промышленность, гражданское строительство.</p>
+                </div>
+
+                <div class="portfolio-clients">
+                    <h3><svg class="icon-svg heading-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.2"/><path d="M12 3v2.8M12 18.2V21M3 12h2.8M18.2 12H21"/></svg> Топ-заказчики</h3>
+                    <div class="clients-list">
+                        <span class="client-tag">Газпром</span>
+                        <span class="client-tag">СИБУР</span>
+                        <span class="client-tag">Норникель</span>
+                        <span class="client-tag client-tag-lg">ЛУКОЙЛ<small>(Нижегороднефтеоргсинтез, Ухтанефтепереработка)</small></span>
+                        <span class="client-tag client-tag-lg">Газпромнефть<small>(МЗСМ, Оренбург)</small></span>
+                        <span class="client-tag">Губкинский ГПЗ</span>
+                        <span class="client-tag">ГМК «Удокан»</span>
+                        <span class="client-tag">ЕвроХим-Каратау</span>
+                        <span class="client-tag client-tag-lg">Группа «Илим»<small>(Братск, Усть-Илимск)</small></span>
+                        <span class="client-tag">Монди Сыктывкарский ЛПК</span>
+                        <span class="client-tag">НЛМК</span>
+                        <span class="client-tag">Северсталь</span>
+                        <span class="client-tag">Карельский окатыш</span>
+                        <span class="client-tag">Ковдорский ГОК</span>
+                        <span class="client-tag">Баимский ГОК</span>
+                        <span class="client-tag">Сургутский ЗСК</span>
+                        <span class="client-tag">Терминалы Усть-Луга и Новороссийск</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-link">
+                <a href="Реестр%20проектов%20ИП%20Трофимов.xlsx" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                    </svg>
+                    <span>Портфолио с примерами объектов</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="section tools">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 08</span>
+                <h2>Профессиональный стек</h2>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-category">
+                    <div class="tool-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg></div>
+                    <h3>CAD / автоматизация</h3>
+                    <p>AutoCAD + LISP, Excel VBA, Python</p>
+                </div>
+                <div class="tool-category">
+                    <div class="tool-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h6M8 3v6.5L4.2 17a2 2 0 0 0 1.8 3h8a2 2 0 0 0 1.8-3L12 9.5V3"/><path d="M6.5 15h7"/></svg></div>
+                    <h3>Специализированное ПО</h3>
+                    <p>TraceCalcPro, CompuTrace, TeploMagR, Rezistiv, tscalc</p>
+                </div>
+                <div class="tool-category">
+                    <div class="tool-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5v-13Z"/></svg></div>
+                    <h3>Нормативная база</h3>
+                    <p>ПУЭ, ГОСТ, СП, международные стандарты</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 09</span>
+                <h2>Опыт работы</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-period">янв. 2014 — н.в.</div>
+                    <div class="timeline-content">
+                        <h3>ООО «ТПМ-Энерго» / ИП</h3>
+                        <p class="timeline-position">Ведущий инженер-проектировщик (электрообогрев: греющая и силовая части)</p>
+                        <p>Удалённая работа по договору ИП. Полный цикл проектирования систем электрообогрева: расчёты, ТЗ, рабочая документация, шкафы управления, сопровождение экспертизы. Масштаб задач — от точечного обогрева пандусов и канализационных выводов до комплексных систем для протяжённых трубопроводов, блочно-модульного технологического оборудования, судовых систем, крупных резервуаров, сепараторов и бункеров. Все проекты выполняются лично, без субподряда: расчёты, подбор оборудования, рабочая документация, шкафы управления, сопровождение экспертизы, авторский надзор, поддержка ПНР. За 11 лет — более 65 реализованных объектов в 7 отраслях.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">фев. 2011 — янв. 2014</div>
+                    <div class="timeline-content">
+                        <h3>ООО «Цертус» (Ингаз), Санкт-Петербург</h3>
+                        <p class="timeline-position">Ведущий инженер-проектировщик</p>
+                        <p>Разработка разделов: ЭМ, ЭО, ЭОБ (электрообогрев), ЭХЗ (электрохимическая защита). Согласование проектной документации.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">фев. 2006 — янв. 2011</div>
+                    <div class="timeline-content">
+                        <h3>ООО «Петропроект»</h3>
+                        <p class="timeline-position">Инженер-проектировщик</p>
+                        <p>Проекты по разделам: ЭС, ЭХЗ, ЭО, электрообогрев трубопроводов и ёмкостей. Нормальные и взрывоопасные зоны. Стадии П, РП, Р, РД. Согласование, работа с замечаниями. Инструменты: AutoCAD, DIALux, MS Office, Adobe Photoshop.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 10</span>
+                <h2>Образование и статус</h2>
+            </div>
+            <div class="education-card">
+                <div class="edu-header">
+                    <div class="edu-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5 12 4l10 4.5-10 4.5-10-4.5Z"/><path d="M6 10.7v4.6c0 1.5 2.7 2.7 6 2.7s6-1.2 6-2.7v-4.6"/><path d="M20.5 8.5v6"/></svg></div>
+                    <div>
+                        <h3>СПбГТУРП</h3>
+                        <p class="edu-full-name">Санкт-Петербургский государственный технологический университет растительных полимеров, 2006</p>
+                    </div>
+                </div>
+                <div class="edu-details">
+                    <p><strong>Факультет:</strong> Автоматизированных систем управления технологическими процессами</p>
+                    <p><strong>Специализация:</strong> Электропривод и автоматика промышленных установок и технологических комплексов</p>
+                </div>
+            </div>
+            <div class="qualification-card">
+                <div class="qual-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="5.5"/><path d="m9 13.5-1.5 7 4.5-2.5 4.5 2.5-1.5-7"/><path d="m9.5 8.5 2 2 3.5-3.5"/></svg></div>
+                <div>
+                    <p class="qual-title">Включён в Национальный реестр специалистов НОПРИЗ</p>
+                    <p class="qual-number">№ П-072776</p>
+                    <a href="НОПРИЗ_(П-072776).pdf" target="_blank" rel="noopener noreferrer" class="certificate-link">Скачать сертификат НОПРИЗ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cooperation Format Section -->
+    <section id="cooperation" class="section cooperation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 11</span>
+                <h2>Формат работы</h2>
+            </div>
+            <div class="cooperation-grid">
+                <div class="coop-item">
+                    <div class="coop-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11 12 4l8 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-6h4v6"/></svg></div>
+                    <h3>Удалённая работа</h3>
+                    <p>Полный цикл проектирования</p>
+                </div>
+                <div class="coop-item">
+                    <div class="coop-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h7l5 5v13a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20V3.5A1.5 1.5 0 0 1 6.5 2Z"/><path d="M14 2v5h5"/><path d="M9 13h6M9 16.5h6"/></svg></div>
+                    <h3>Договор с ИП</h3>
+                    <p>ОКВЭД 71.12.1, УСН, без НДС</p>
+                </div>
+                <div class="coop-item">
+                    <div class="coop-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7.5" width="18" height="12" rx="1.5"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5"/><path d="M3 12.5h18"/></svg></div>
+                    <h3>Форматы ГПХ</h3>
+                    <p>Гражданско-правовые договоры</p>
+                </div>
+                <div class="coop-item">
+                    <div class="coop-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg></div>
+                    <h3>Срочные задачи</h3>
+                    <p>Готов к сложным проектам</p>
+                </div>
+                <div class="coop-item">
+                    <div class="coop-icon"><svg class="icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.8V11l8-2.5V4a1.3 1.3 0 0 1 2.6 0v4.5L21 11v1.8l-7.4-1.9v4.4l2.4 1.6v1.4l-3.5-1-3.5 1v-1.4l2.4-1.6v-4.4L3 12.8Z"/></svg></div>
+                    <h3>Командировки</h3>
+                    <p>Выезд на объект при необходимости</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="section contacts">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">УЗЕЛ 12</span>
+                <h2>Контакты</h2>
+            </div>
+            <div class="contacts-grid">
+                <a href="mailto:jonik007@yandex.ru" class="contact-card">
+                    <div class="contact-icon"><svg class="icon-svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 6.5 8 6.5 8-6.5"/></svg></div>
+                    <div>
+                        <strong>Email</strong>
+                        <p>jonik007@yandex.ru</p>
+                    </div>
+                </a>
+                <a href="tel:+79045123395" class="contact-card">
+                    <div class="contact-icon"><svg class="icon-svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h3L11 8l-2 1.5a12 12 0 0 0 5.5 5.5L16 13l4.5 1.5v3a2 2 0 0 1-2.2 2C10.8 18.7 5.3 13.2 4 5.7a2 2 0 0 1 2-2.2Z"/></svg></div>
+                    <div>
+                        <strong>Телефон</strong>
+                        <p>+7 (904) 512-33-95</p>
+                    </div>
+                </a>
+                <a href="https://t.me/obogrevuniversal" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon"><svg class="icon-svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3 3 10.5l6.5 2.3M21 3l-8.2 17-2.3-7.2M21 3 9.5 12.8"/></svg></div>
+                    <div>
+                        <strong>Telegram</strong>
+                        <p>@obogrevuniversal</p>
+                    </div>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon"><svg class="icon-svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg></div>
+                    <div>
+                        <strong>Город</strong>
+                        <p>Санкт-Петербург</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts-buttons">
+                <a href="mailto:jonik007@yandex.ru" class="btn btn-primary btn-lg">
+                    <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <span>Написать письмо</span>
+                </a>
+                <a href="https://t.me/obogrevuniversal" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+                    <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"/>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                    <span>Написать в Telegram</span>
+                </a>
+                <a href="./Резюме.pdf" class="btn btn-outline btn-lg" download>
+                    <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                    </svg>
+                    <span>Скачать резюме</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Трофимов Евгений Сергеевич. Инженер-проектировщик систем электрообогрева.</p>
+            <p class="footer-note">Санкт-Петербург · 19 лет опыта · 65+ проектов</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+    <script src="js/main.js?v=20260824-country-centers"></script>
+</body>
+</html>
