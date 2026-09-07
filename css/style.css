@@ -292,6 +292,40 @@ img {
   background: rgba(76, 134, 166, 0.2);
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 12px;
+  padding: 3px;
+  border: 1px solid var(--border-dark);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.language-button {
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 7px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.62);
+  font: 600 0.7rem/1 var(--font-mono, "IBM Plex Mono", monospace);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.language-button:hover,
+.language-button:focus-visible {
+  color: #ffffff;
+  background: rgba(76, 134, 166, 0.2);
+}
+
+.language-button.active {
+  color: #ffffff;
+  background: var(--accent-color);
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -1927,6 +1961,10 @@ img {
 
   .nav-toggle {
     display: flex;
+  }
+
+  .language-switcher {
+    margin-left: auto;
   }
 
   .nav-toggle.active span:nth-child(1) {
