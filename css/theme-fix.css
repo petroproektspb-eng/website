@@ -209,14 +209,6 @@ body {
     padding: 0;
 }
 
-.photo-placeholder img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
 @media (max-width: 980px) {
     .geography-layout {
         grid-template-columns: 1fr;

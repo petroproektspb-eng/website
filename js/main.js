@@ -25,7 +25,7 @@
         { name: 'Сургутский ЗСК', place: 'Сургут, ХМАО', coordinates: [73.4, 61.25], climate: 'cold' },
         { name: 'Северсталь', place: 'Череповец, Вологодская область', coordinates: [37.9, 59.13], climate: 'cold' },
         { name: 'Озерный ГОК', place: 'Еравнинский район, Бурятия', coordinates: [111.5, 51.75], climate: 'cold' },
-        { name: 'Ленинградский вокзал', place: 'Москва', coordinates: [37.62, 55.76] }
+        { name: 'Москва', place: 'Москва', coordinates: [37.62, 55.76] }
     ];
 
     async function renderRussiaMap() {
@@ -41,9 +41,27 @@
             if (!russiaGeometry) return;
 
             const russia = topojson.feature(world, russiaGeometry);
+            const kazakhstanGeometry = world.objects.countries.geometries.find(country => String(country.id) === '398');
+            const kazakhstan = kazakhstanGeometry
+                ? topojson.feature(world, kazakhstanGeometry)
+                : null;
 
-            const projection = d3.geoMercator().center([100, 60]).scale(260).translate([400, 190]);
+            const projection = d3.geoMercator()
+                .center([100, 60])
+                .scale(220)
+                .translate([400, 265]);
             const path = d3.geoPath(projection);
+            const graticule = d3.geoGraticule().step([30, 15]);
+            const gridLayer = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+            gridLayer.setAttribute('class', 'map-graticule');
+            graticule.lines().forEach(line => {
+                const gridLine = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                gridLine.setAttribute('class', 'map-grid-line');
+                gridLine.setAttribute('d', path(line));
+                gridLayer.appendChild(gridLine);
+            });
+            mapSvg.appendChild(gridLayer);
+
             const countryPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
             countryPath.setAttribute('class', 'country-shape');
             countryPath.setAttribute('d', path(russia));
@@ -57,16 +75,14 @@
             russiaLabel.textContent = 'РОССИЙСКАЯ ФЕДЕРАЦИЯ';
             mapSvg.appendChild(russiaLabel);
 
-            const kazakhstanGeometry = world.objects.countries.geometries.find(country => String(country.id) === '398');
-            if (kazakhstanGeometry) {
+            if (kazakhstan) {
                 const kazakhstanPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
                 kazakhstanPath.setAttribute('class', 'country-shape country-kazakhstan');
-                kazakhstanPath.setAttribute('d', path(topojson.feature(world, kazakhstanGeometry)));
+                kazakhstanPath.setAttribute('d', path(kazakhstan));
                 mapSvg.appendChild(kazakhstanPath);
 
                 const kazakhstanLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
                 kazakhstanLabel.setAttribute('class', 'country-label country-label-kazakhstan');
-                const kazakhstan = topojson.feature(world, kazakhstanGeometry);
                 const [kazakhstanLabelX, kazakhstanLabelY] = path.centroid(kazakhstan);
                 kazakhstanLabel.setAttribute('x', kazakhstanLabelX);
                 kazakhstanLabel.setAttribute('y', kazakhstanLabelY);
