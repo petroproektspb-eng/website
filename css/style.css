@@ -1938,8 +1938,12 @@ img {
 }
 
 @media (max-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+
   .container {
-    padding: 0 16px;
+    padding: 0 20px;
   }
 
   .nav-menu {
@@ -1985,11 +1989,12 @@ img {
   }
 
   .hero h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
   .hero-position {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .section {
@@ -2001,7 +2006,8 @@ img {
   }
 
   .section h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 1.25;
   }
 
   .about-content {
@@ -2044,6 +2050,17 @@ img {
 
   .workflow-grid {
     grid-template-columns: 1fr;
+  }
+
+  .section-subtitle,
+  .geography-copy .lead,
+  .about-text .lead {
+    font-size: 1.12rem;
+  }
+
+  .language-button {
+    min-width: 36px;
+    min-height: 32px;
   }
 
   .timeline-item {
@@ -2095,7 +2112,7 @@ img {
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .hero-buttons {
@@ -2126,7 +2143,7 @@ img {
   }
 
   .section h2 {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
   }
 }
 
