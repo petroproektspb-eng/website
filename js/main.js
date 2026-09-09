@@ -1,7 +1,7 @@
 // Mobile Navigation Toggle
 (() => {
     const translationRows = [
-        ['Трофимов Евгений Сергеевич — Инженер-проектировщик систем электрообогрева', 'Evgeny Trofimov — Industrial Heat Tracing Design Engineer', '特罗菲莫夫·叶夫根尼 — 工业电伴热系统设计工程师'],
+        ['Евгений Трофимов — инженер-проектировщик систем электрообогрева', 'Evgeny Trofimov — Industrial Heat Tracing Design Engineer', '特罗菲莫夫·叶夫根尼 — 工业电伴热系统设计工程师'],
         ['01 · Обо мне', '01 · About me', '01 · 关于我'],
         ['02 · География', '02 · Geography', '02 · Project geography'],
         ['03 · Показатели', '03 · Key figures', '03 · 关键指标'],
@@ -166,7 +166,7 @@
         ['Скачать резюме', 'Download CV', '下载简历'],
         ['© 2025 Трофимов Евгений Сергеевич. Инженер-проектировщик систем электрообогрева.', '© 2025 Evgeny Trofimov. Industrial heat tracing design engineer.', '© 2025 特罗菲莫夫·叶夫根尼。工业电伴热系统设计工程师。'],
         ['Санкт-Петербург · 19 лет опыта · 65+ проектов', 'Saint Petersburg · 19 years of experience · 65+ projects', '圣彼得堡 · 19 年经验 · 65+ 个项目'],
-        ['Сайт-резюме инженера-проектировщика систем электрообогрева Трофимова Евгения Сергеевича. 19 лет опыта, 65+ проектов.', 'Resume website of Evgeny Trofimov, an industrial heat tracing design engineer. 19 years of experience, 65+ projects.', '工业电伴热系统设计工程师特罗菲莫夫·叶夫根尼的简历网站。19 年经验，65+ 个项目。'],
+        ['Евгений Трофимов — инженер-проектировщик систем электрообогрева. 19 лет опыта, 65+ реализованных объектов.', 'Evgeny Trofimov — industrial heat tracing design engineer. 19 years of experience, 65+ completed facilities.', '特罗菲莫夫·叶夫根尼——工业电伴热系统设计工程师。19 年经验，65+ 个已完成项目。'],
         ['ЛУКОЙЛ-Нижегороднефтеоргсинтез', 'LUKOIL-NizhegorodNefteProekt', '卢克石油-下诺夫哥罗德炼油厂'],
         ['Кстово, Нижегородская область', 'Kstovo, Nizhny Novgorod Region', '克斯托沃，下诺夫哥罗德州'],
         ['ГМК «Удокан»', 'Udokan Copper', '乌多坎矿业公司'],
@@ -267,8 +267,8 @@
         }
 
         const attributes = {
-            title: translateValue('Трофимов Евгений Сергеевич — Инженер-проектировщик систем электрообогрева'),
-            description: translateValue('Сайт-резюме инженера-проектировщика систем электрообогрева Трофимова Евгения Сергеевича. 19 лет опыта, 65+ проектов.')
+            title: translateValue('Евгений Трофимов — инженер-проектировщик систем электрообогрева'),
+            description: translateValue('Евгений Трофимов — инженер-проектировщик систем электрообогрева. 19 лет опыта, 65+ реализованных объектов.')
         };
         document.title = attributes.title;
         document.querySelector('meta[name="description"]')?.setAttribute('content', attributes.description);
